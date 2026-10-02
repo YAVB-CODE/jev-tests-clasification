@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* Dark variant follows prefers-color-scheme (Tailwind 4 default); the page tokens match zinc-50 / zinc-950 from ui/theme.ts. */
+/* --engine-*: series colors of each engine (charts, bars, dots), validated per surface; see ENGINE_THEME in ui/theme.ts. */
+:root {
+  color-scheme: light dark;
+  --bg: #fafafa;
+  --fg: #18181b;
+  --engine-gpt: #0d9488;
+  --engine-jev: #7c3aed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #09090b;
+    --fg: #f4f4f5;
+    --engine-gpt: #10a393;
+    --engine-jev: #8b5cf6;
+  }
+}
+
+html {
+  /* Keeps the layout from jumping when a vertical scrollbar appears while results stream in. */
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

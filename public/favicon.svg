@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0a0e15"/>
+  <!-- Pantalla dividida: carril GPT (izquierda) vs carril Jev (derecha) -->
+  <rect x="10" y="14" width="20" height="36" rx="5" fill="#2dd4bf" fill-opacity="0.18" stroke="#2dd4bf" stroke-width="2.5"/>
+  <rect x="34" y="14" width="20" height="36" rx="5" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-width="2.5"/>
+  <!-- Marcas de clasificación -->
+  <path d="M15 26h10M15 32h10M15 38h6" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M39 26h10M39 32h10M39 38h6" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
